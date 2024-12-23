@@ -5,19 +5,18 @@ import ConsultingBanner from "./ConsultingBanner";
 const StrangerAndVideo = () => {
   return (
     <>
-      <div className="px-4 py-8 md:px-28 md:py-12">
-        <div className="relative w-full overflow-hidden flex flex-col items-center md:flex-row md:justify-between ">
+      <div className=" relative overflow-hidden w-full mt-28">
+        <Image
+          src="/Grade-Vector.png"
+          alt=""
+          className="absolute min-h-screen min-w-full z-10 top-0 ring-2 ring-orange-500"
+          width={500}
+          height={500}
+        />
+        <div className="w-full px-4 py-8 md:px-8 lg:px-28 xl:px-24 2xl:px-48 md:py-12 flex flex-col items-center md:flex-row md:justify-between md:text-center md:gap-4 ">
           {/* Background Vector */}
-          <Image
-            src="/Grade-Vector.png"
-            alt=""
-            className="absolute h-screen w-full z-10 top-12"
-            width={500}
-            height={500}
-          />
-
           {/* Left Content */}
-          <div className="text-center md:text-left max-w-lg">
+          <div className="text-center md:text-left w-full sm:w-1/2 ">
             <h1 className="text-4xl font-extrabold bg-gradient-to-b from-[#BD5AFC] to-[#7C35A9] bg-clip-text text-transparent mb-4">
               Stranger Danger!
             </h1>
@@ -40,23 +39,18 @@ const StrangerAndVideo = () => {
           </div>
 
           {/* Right Content (Video) */}
-          <div className="relative px-3 mt-8 md:mt-0 w-[322px] md:w-[480px] overflow-hidden  md:px-0">
-            <Image
-              src="/Video-Ring.png"
-              alt="Video Ring Background"
-              className="rounded-xl z-20"
-              width={500}
-              height={420}
-            />
+          <div className="p-5 mt-8 w-full md:mt-0 sm:w-1/2 flex justify-center text-center md:text-start md:justify-start md:flex-row-reverse md:p-0">
             <video
               src=""
               controls
-              className="absolute top-1 left-4 md:left-1 z-50 w-[290px] h-[230px] md:w-[471px] md:h-[374px] rounded-xl md:rounded-3xl object-cover"
+              className="size-48 w-full sm:size-80 md:w-3/4 max-w-xl rounded-sm md:rounded-3xl object-cover ring-4 ring-[#7C35A9]"
             ></video>
           </div>
         </div>
 
+        <div className="w-full px-4 py-8 md:px-8 lg:px-28 xl:px-24 2xl:px-48 md:py-12 flex flex-col items-center">
         <ConsultingBanner />
+        </div>
       </div>
     </>
   );

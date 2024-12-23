@@ -51,7 +51,7 @@ export default function NavHero() {
       }, []);
       
   return (
-    <section className="h-[100vh] bg-gradient-to-b from-[#BD5AFC] to-[#01B7FD] flex relative overflow-hidden">
+    <section className="h-[100vh] z-50 bg-gradient-to-b from-[#BD5AFC] to-[#01B7FD] flex relative overflow-hidden">
       {/* Navbar */}
       <nav className={`w-full ${
         isScrolled 
