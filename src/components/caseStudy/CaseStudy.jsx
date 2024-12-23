@@ -6,8 +6,8 @@ const CaseStudy = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className="flex justify-center items-center  my-20">
-      <div className="bg-[#FDF9FF] flex flex-col items-center justify-center w-full max-w-[1241px] min-h-fit pt-10 pb-1 sm:pt-12 sm:pb-2 md:pt-12 md:pb-2 lg:pt-16 lg:pb-3 px-1 sm:px-2 md:px-2 lg:px-3 rounded-xl sm:rounded-2xl shadow-xl mx-10 lg:mx-0">
+    <div className="flex justify-center items-center my-20">
+      <div className="bg-[#FDF9FF] flex flex-col items-center justify-center w-full max-w-[1241px] min-h-fit pt-10 pb-1 sm:pt-12 sm:pb-2 md:pt-12 md:pb-2 lg:pt-16 lg:pb-3 px-1 sm:px-2 md:px-2 lg:px-3 rounded-xl sm:rounded-2xl shadow-xl mx-4 lg:mx-0">
         <h1 className="text-transparent bg-clip-text bg-gradient-to-b from-[#BD5AFC] to-[#7C35A9] text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 md:mb-7 lg:mb-8 max-w-[328px] sm:max-w-[428px] md:min-h-[116px] md:max-w-[550px]">
           Tutoring So Good,
           <br />
