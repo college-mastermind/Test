@@ -14,7 +14,7 @@ const Footer = () => {
             <p className="hover:opacity-80 cursor-pointer">Grades</p>
           </div>
 
-          <div className="lg:col-span-3 space-y-2 md:space-y-3">
+          <div className="lg:col-span-2 space-y-2 md:space-y-3">
             <h1 className="font-bold text-lg mb-4">Grades</h1>
             <p className="hover:opacity-80 cursor-pointer">Elementary</p>
             <p className="hover:opacity-80 cursor-pointer">Middle School</p>
@@ -42,11 +42,11 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="lg:col-span-3">
+          <div className="lg:col-span-4 min-w-[340px]">
             <h1 className="font-bold text-lg mb-4">
               Subscribe to Our Newsletter
             </h1>
-            <div className="relative max-w-[300px] mx-auto lg:mx-0">
+            <div className="relative mx-auto lg:mx-0">
               <input
                 type="email"
                 placeholder="Email"
