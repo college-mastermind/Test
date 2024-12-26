@@ -8,7 +8,7 @@ export default function Result() {
         <h2 className="text-black bg-gradient-to-b from-[#BD5AFC] to-[#7C35A9] inline-block text-transparent bg-clip-text text-[32px] md:text-[40px] lg:text-[48px] text-center mx-auto pb-2 font-bold">
           Results You Can Count On
         </h2>
-        <p className="text-black text-center font-semibold mt-2 sm:px-20 text-lg text-[24px] md:text-[28px] lg:text-[32px">
+        <p className="text-black text-center font-semibold mt-2 sm:px-20 text-lg text-[24px] md:text-[28px] lg:text-[32px]">
           We combine proven strategies with fun teaching to help your child
           succeed fast! Our client's experience
         </p>
@@ -22,8 +22,8 @@ export default function Result() {
             Exclusive Private Tutoring
           </h3>
           <div className="relative flex flex-col gap-6 lg:gap-8 mt-6 lg:mt-8">
-            {/* Continuous vertical line that stops exactly at last dot */}
-            <div className="hidden sm:block absolute z-0 left-[11px] top-[12px] h-[180px] border-l-2 border-l-[#EED2FF]"></div>
+            {/* Updated vertical line */}
+            <div className="absolute z-0 left-[11px] top-[12px] h-[calc(100%-40px)] border-l-2 border-l-[#EED2FF]"></div>
 
             {/* Item 1 */}
             <div className="relative flex flex-row gap-3 sm:gap-4">
@@ -65,8 +65,8 @@ export default function Result() {
             Big Tutoring Companies
           </h3>
           <div className="relative flex flex-col gap-6 lg:gap-8 mt-6 lg:mt-8">
-            {/* Continuous vertical line that stops exactly at last dot */}
-            <div className="hidden sm:block absolute z-0 left-[11px] top-[12px] h-[170px] border-l-2 border-l-[#DDDDDD]"></div>
+            {/* Updated vertical line */}
+            <div className="absolute z-0 left-[11px] top-[12px] h-[calc(100%-40px)] border-l-2 border-l-[#DDDDDD]"></div>
 
             {/* Item 1 */}
             <div className="relative flex flex-row gap-3 sm:gap-4">
