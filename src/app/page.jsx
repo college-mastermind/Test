@@ -1,3 +1,4 @@
+'use client'
 import Footer from "@/components/footer/Footer";
 import NavHero from "@/components/navhero/NavHero";
 import Result from "@/components/result/Result";
@@ -9,17 +10,19 @@ import Personal from '@/components/personal/Personal'
 import StrangerAndVideo from '@/components/Stranger/StrangerAndVideo'
 
 export default function Home() {
+
+  
+
   return (
     <> 
       <NavHero />
       <Learning />
-      <Result />
       <GradeLevels />
-      <CaseStudy />
+      <Result />
       <Testimonial />
       <Personal />
+      <CaseStudy />
       <StrangerAndVideo />
-      {/* <ConsultingBanner /> */}
       <Footer />  
     </>
   );
