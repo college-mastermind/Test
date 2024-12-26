@@ -5,10 +5,10 @@ export default function Result() {
     <section className="py-16 bg-white">
       <div className="max-w-4xl mx-auto px-4 text-center">
         {/* Title */}
-        <h2 className="text-black bg-gradient-to-b from-[#BD5AFC] to-[#7C35A9] inline-block text-transparent bg-clip-text text-5xl md:text-6xl text-center mx-auto pb-2 font-bold">
+        <h2 className="text-black bg-gradient-to-b from-[#BD5AFC] to-[#7C35A9] inline-block text-transparent bg-clip-text text-[32px] md:text-[40px] lg:text-[48px] text-center mx-auto pb-2 font-bold">
           Results You Can Count On
         </h2>
-        <p className="text-black text-center font-semibold mt-2 sm:px-20 text-lg sm:text-3xl">
+        <p className="text-black text-center font-semibold mt-2 sm:px-20 text-lg text-[24px] md:text-[28px] lg:text-[32px">
           We combine proven strategies with fun teaching to help your child
           succeed fast! Our client's experience
         </p>
