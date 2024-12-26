@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import React, { useState } from "react";
 
@@ -44,13 +44,17 @@ const Testimonial = () => {
   };
 
   return (
-    <div className="flex flex-col items-center gap-8 max-w-[90%] w-full mx-auto z-10 h-96 md:h-[700px]  mt-10 lg:mt-20 overflow-x-hidden">
+    <div className="flex flex-col items-center justify-start gap-8 w-screen max-h-[700px] h-[500px] md:min-h-[500px] md:max-h-[700px] sm:h-[700px] overflow-hidden mt-10 z-10 bg-gray-50">
+      {/* <div className="flex flex-col items-center justify-start gap-8 w-screen h-auto min-h-[500px] sm:min-h-[600px] md:min-h-[700px]  overflow-hidden mt-10 z-10 bg-gray-50"> */}
+
       {/* Header Section */}
       <div className="text-center mb-10 lg:mb-40">
-        <h2 className="text-2xl lg:text-[48px] font-bold bg-gradient-to-b from-[#01B7FD] to-[#007FB0] text-transparent bg-clip-text">
+        <h2 className="text-3xl lg:text-[48px] font-bold bg-gradient-to-b from-[#01B7FD] to-[#007FB0] text-transparent bg-clip-text lg:mb-5">
           We Love Our Students
         </h2>
-        <p className="text-lg lg:text-[28px] text-[#01B7FD]">And They Love Us Too!</p>
+        <p className="text-lg lg:text-[28px] text-[#01B7FD] mb-24">
+          And They Love Us Too!
+        </p>
       </div>
 
       {/* Carousel Section */}
@@ -59,9 +63,9 @@ const Testimonial = () => {
         {testimonials.map((testimonial, index) => {
           const isActive = index === currentIndex;
           const isPrev =
-            index === (currentIndex - 1 + testimonials.length) % testimonials.length;
-          const isNext =
-            index === (currentIndex + 1) % testimonials.length;
+            index ===
+            (currentIndex - 1 + testimonials.length) % testimonials.length;
+          const isNext = index === (currentIndex + 1) % testimonials.length;
 
           return (
             <div
@@ -71,7 +75,11 @@ const Testimonial = () => {
                   ? "scale-100 z-10 opacity-100 w-auto h-auto md:w-[70%] lg:w-[50%]"
                   : "scale-75 z-0 opacity-50 w-auto h-auto md:w-[50%] lg:w-[30%]"
               } ${
-                isPrev ? "translate-x-[-120%]" : isNext ? "translate-x-[120%]" : "translate-x-0"
+                isPrev
+                  ? "translate-x-[-120%]"
+                  : isNext
+                  ? "translate-x-[120%]"
+                  : "translate-x-0"
               } bg-white p-6 mx-2`}
             >
               <div className="flex mb-4">
@@ -104,66 +112,59 @@ const Testimonial = () => {
                   <h3 className="font-medium text-gray-900 text-sm lg:text-base">
                     {testimonial.name}
                   </h3>
-                  <p className="text-gray-500 text-xs lg:text-sm">{testimonial.role}</p>
+                  <p className="text-gray-500 text-xs lg:text-sm">
+                    {testimonial.role}
+                  </p>
                 </div>
               </div>
             </div>
           );
         })}
 
-
-      {/* Navigation Buttons */}
-<div className="relative">
-  <div className="absolute -bottom-[200px] sm:-bottom-36 lg:-bottom-72 flex flex-row justify-center items-center w-full px-4 sm:px-8 gap-4 sm:gap-5 z-10">
-    <button
-      onClick={handlePrev}
-      className="w-10 h-10 rounded-full bg-gradient-to-b from-[#BD5AFC] to-[#7C35A9] text-white flex items-center justify-center shadow-lg hover:opacity-90 transition-opacity"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width={24}
-        height={24}
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth={2}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className="lucide lucide-chevron-left w-4 h-4 lg:w-6 lg:h-6"
-      >
-        <path d="m15 18-6-6 6-6" />
-      </svg>
-    </button>
-    <button
-      onClick={handleNext}
-      className="w-10 h-10 rounded-full bg-gradient-to-b from-[#BD5AFC] to-[#7C35A9] text-white flex items-center justify-center shadow-lg hover:opacity-90 transition-opacity"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width={24}
-        height={24}
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth={2}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className="lucide lucide-chevron-right w-4 h-4 lg:w-6 lg:h-6"
-      >
-        <path d="m9 18 6-6-6-6" />
-      </svg>
-    </button>
-  </div>
-</div>
-
-
-
-
-    </div>
-
+        {/* Navigation Buttons */}
+        <div className="absolute  -bottom-60 sm:-bottom-60 lg:-bottom-72 flex flex-row justify-center items-center w-full px-4 gap-4 z-10">
+          <button
+            onClick={handlePrev}
+            className="w-10 h-10 rounded-full bg-gradient-to-b from-[#BD5AFC] to-[#7C35A9] text-white flex items-center justify-center shadow-lg hover:opacity-90 transition-opacity"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width={24}
+              height={24}
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={2}
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="lucide lucide-chevron-left w-4 h-4 lg:w-6 lg:h-6"
+            >
+              <path d="m15 18-6-6 6-6" />
+            </svg>
+          </button>
+          <button
+            onClick={handleNext}
+            className="w-10 h-10 rounded-full bg-gradient-to-b from-[#BD5AFC] to-[#7C35A9] text-white flex items-center justify-center shadow-lg hover:opacity-90 transition-opacity"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width={24}
+              height={24}
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={2}
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="lucide lucide-chevron-right w-4 h-4 lg:w-6 lg:h-6"
+            >
+              <path d="m9 18 6-6-6-6" />
+            </svg>
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
 
 export default Testimonial;
-
